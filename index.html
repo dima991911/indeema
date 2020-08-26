@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/index.css">
+    <title>Calculate</title>
+</head>
+<body>
+    <div class="container">
+        <section class="section-container">
+            <h2 class="section-title">CALCULATE CHANGE</h2>
+            <div class="form-container">
+                <form id="calculate-form">
+                    <div class="calculate-form-input-wrapper">
+                        <div class="input-filed">
+                            <input type="number" min="0.01" step="any" id="calculate-form-sum" value="0.00" name="sum" placeholder="sum" >
+                        </div>
+                    </div>
+                    <div class="calculate-form-input-wrapper">
+                        <div class="input-filed">
+                            <input type="number" min="0.01" step="any" id="calculate-form-price" value="0.00" name="price" placeholder="price" >
+                        </div>
+                    </div>
+                    <button class="form-btn">CALCULATE</button>
+                </form>
+            </div>
+        </section>
+
+        <section class="table-user-list-wrapper">
+            <h2 class="section-title">ADD INFO ABOUT USER</h2>
+
+            <div class="remove-checked-wrapper">
+                <button class="remove-btn remove-all-checked-btn">REMOVE ALL CHECKED</button>
+            </div>
+            <div class="table-user-list">
+                <div class="table-head">
+                    <div class="table-body-item-checkbox"></div>
+                    <div class="table-head-item">Name</div>
+                    <div class="table-head-item">Surname</div>
+                    <div class="table-head-item">Email</div>
+                    <div class="table-head-item">Date</div>
+                    <div class="table-body-item-actions"></div>
+                </div>
+                <div class="table-body"></div>
+                <div class="table-add">
+                    <div class="table-add-body-item input-filed">
+                        <input type="text" id="add-user-name" placeholder="Name" >
+                    </div>
+                    <div class="table-add-body-item input-filed">
+                        <input type="text" id="add-user-surname" placeholder="Surname" >
+                    </div>
+                    <div class="table-add-body-item input-filed">
+                        <input type="text" id="add-user-email" placeholder="Email" >
+                    </div>
+                    <div class="table-add-body-item">
+                        <button class="add-user-info-btn">ADD</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <script src="js/main.js"></script>
+    <script src="js/modal.js"></script>
+    <script src="js/alert.js"></script>
+    <script src="js/calculate.js"></script>
+    <script src="js/user-list.js"></script>
+</body>
+</html>
